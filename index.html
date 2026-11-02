@@ -1137,7 +1137,7 @@
   /* =========================================================
      Config — change API_BASE when you deploy.
      ========================================================= */
-  var API_BASE = window.PROMPT_API_BASE || "http://localhost:5000";
+  var API_BASE = window.PROMPT_API_BASE || "https://your-render-app-name.onrender.com/generate";
   var ENDPOINT = API_BASE.replace(/\/+$/, "") + "/generate";
   var HEALTH = API_BASE.replace(/\/+$/, "") + "/health";
   var KEY_HEADER = "X-Gemini-API-Key";
