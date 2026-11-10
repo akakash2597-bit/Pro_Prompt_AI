@@ -248,3 +248,6 @@ def internal_error(_):
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'online'}), 200
